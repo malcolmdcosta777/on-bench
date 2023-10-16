@@ -44,7 +44,7 @@ const MergeComponents = () => {
     const handleMerge = () => {
 
         const copy = oldProdList.map(item => ({ ...item })); //done to prevent state mutation
-        const mergedOldProdList = mergeArrayItems(copy, newProdList, [5, 8, 9]); //do note oldProdList does undergo mutation 
+        const mergedOldProdList = mergeArrayItems(copy, newProdList, [5, 8, 9]); 
         setMergedoldProdList(mergedOldProdList);
     }
 
