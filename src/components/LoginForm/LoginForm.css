@@ -1,0 +1,85 @@
+:root{
+    --border-radius: 4px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.form-container {
+    background: #fff;
+}
+
+
+.form-group,
+.form-button {
+    margin-bottom: 14px;
+}
+
+.form-button {
+    text-align: center;
+}
+
+.form-button .btn {
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+}
+
+
+.label,
+.input--block {
+    width: 100%;
+}
+
+.label {
+    /* else margin bottom doesnt work */
+    display: inline-block;
+    margin-bottom: 4px;
+    color: #A9A9A9;
+}
+
+.input {
+    border: 1px solid #D3D3D3;
+    outline: 0;
+    padding: 10px;
+    font-size: 1.8rem;
+    border-radius: var(--border-radius);
+    
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+
+.alert {
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
+    font-size: 1.5rem;
+}
+
+
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}

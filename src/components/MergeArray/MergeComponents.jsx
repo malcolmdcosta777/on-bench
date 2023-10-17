@@ -1,5 +1,5 @@
 import { useState } from "react";
-import mergeArrayItems from "../utils/mergeArrayItems";
+import mergeArrayItems from "../../utils/mergeArrayItems";
 import './MergeComponents.css';
 
 
@@ -35,12 +35,7 @@ const MergeComponents = () => {
     const [meregedoldProdList, setMergedoldProdList] = useState([]);
 
 
-    // useEffect(() => {
-    //     const mergedOldProdList = mergeArrayItems(oldProdList, newProdList, [5, 8, 9]); //do note oldProdList does undergo mutation 
-    //     console.log('mergedOldProdList', mergedOldProdList)
-    // }, []);
-
-
+ 
     const handleMerge = () => {
 
         const copy = oldProdList.map(item => ({ ...item })); //done to prevent state mutation
