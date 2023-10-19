@@ -1,4 +1,4 @@
-import { useState} from 'react';
+import { useState } from 'react';
 import FormInput from '../common/FormInput';
 import { validateEmail, validateName, validatePassword, validatePhoneNumber } from '../../utils/formValidate';
 import './LoginForm.css';
@@ -45,7 +45,7 @@ const LoginForm = () => {
         }
 
 
-        if(errorPresent) return;  //if error present prevent form submission
+        if (errorPresent) return;  //if error present prevent form submission
 
 
         //store jwt after server call
@@ -70,16 +70,20 @@ const LoginForm = () => {
     const validateForm = (obj, propertyName) => {
         const { username, phoneNumber, email, password } = obj;
 
-        const allErrors = { ...errors };
+        let allErrors = { ...errors };
 
         if (propertyName === "username") {
-            validateName(username, allErrors);
+            const error = validateName(username);
+            allErrors = { ...allErrors, username: error };
         } else if (propertyName === "phoneNumber") {
-            validatePhoneNumber(phoneNumber, allErrors);
+            const error = validatePhoneNumber(phoneNumber, allErrors);
+            allErrors = { ...allErrors, phoneNumber: error };
         } else if (propertyName === "email") {
-            validateEmail(email, allErrors);
+            const error = validateEmail(email, allErrors);
+            allErrors = { ...allErrors, email: error };
         } else if (propertyName === "password") {
-            validatePassword(password, allErrors);
+            const error = validatePassword(password, allErrors);
+            allErrors = { ...allErrors, password: error };
         }
 
 

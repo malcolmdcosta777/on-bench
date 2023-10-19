@@ -1,43 +1,57 @@
-export const validateName = (username, allErrors) => {
+export const validateName = (username) => {
+
+    let errorMsg = "";
+
+
     const nameRegex = /^[a-zA-Z\s]+$/;
     //allows whitespace, lowercase, uppercase, 
     //+ 1 0r more charcs
     //$ end of string
 
     if (!username.trim()) {
-        allErrors.username = "name is required";
+        errorMsg = "name is required";
     } else if (username.length < 10) {
-        allErrors.username = "name too short";
+        errorMsg = "name too short";
     } else if (!username.match(nameRegex)) {
-        allErrors.username = "please enter a valid name";
+        errorMsg = "please enter a valid name";
     } else {
-        allErrors.username = ""
+        errorMsg = ""
     }
 
-
+    return errorMsg;
 
 };
 
 
-export const validatePhoneNumber = (phoneNumber, allErrors) => {
+export const validatePhoneNumber = (phoneNumber) => {
+
+    
+    let errorMsg = "";
+
     const phoneNumberRegex = /^\d+$/; //not needed if have given input type as number but still added cause asked
 
     //d+ same as  [0-9] , one or more digits
 
     if (!phoneNumber.trim()) {
-        allErrors.phoneNumber = "phone number is required";
+        errorMsg = "phone number is required";
     } else if (!phoneNumber.match(phoneNumberRegex)) {
-        allErrors.phoneNumber = "please enter a valid mob no";
+        errorMsg = "please enter a valid mob no";
     } else if (phoneNumber.length !== 10) {
-        allErrors.phoneNumber = "phone number must be 10 digits";
+        errorMsg = "phone number must be 10 digits";
     } else {
-        allErrors.phoneNumber = ""
+        errorMsg = ""
     }
+
+
+    return errorMsg;
 
 };
 
 
-export const validateEmail = (email, allErrors) => {
+export const validateEmail = (email) => {
+
+    let errorMsg = "";
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
     // ^ start of the string.
@@ -48,24 +62,29 @@ export const validateEmail = (email, allErrors) => {
     //$ end of string
 
     if (!email.trim()) {
-        allErrors.email = "email is required"
+        errorMsg = "email is required"
     } else if (!email.match(emailRegex)) {
-        allErrors.email = "please enter a valid email"
+        errorMsg = "please enter a valid email"
     } else {
-        allErrors.email = ""
+        errorMsg = ""
     }
 
+
+    return errorMsg;
 };
 
 
-export const validatePassword = (password, allErrors) => {
+export const validatePassword = (password) => {
+
+    let errorMsg = "";
 
     if (!password.trim()) {
-        allErrors.password = "password is required"
+        errorMsg = "password is required"
     } else if (password.length < 5) {
-        allErrors.password = "password too short"
+        errorMsg = "password too short"
     } else {
-        allErrors.password = ""
+        errorMsg = ""
     }
 
+    return errorMsg;
 };
