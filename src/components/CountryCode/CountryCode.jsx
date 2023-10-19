@@ -45,7 +45,7 @@ const CountryCode = () => {
             <div className='country-codes'>
                 <div className="dropdown">
                     <button className='dropdown-toggle' onClick={() => toggleDropDown()}>
-                        <div className='dropdown-items-container'>
+                        <div className='d-flex flex-center'>
                             <img src={countries.filter(c=>c.ccode===selectedCountry)[0].image} alt="" className="dropdown-img" />
                             <span className='dropdown-option-label'>{selectedCountry}</span>
                         </div>
@@ -54,8 +54,7 @@ const CountryCode = () => {
 
                     <ul className={`dropdown-menu ${dropdown ? "open" : ""}`}>
                         {countries.map(country => <li key={country.ccode} className='dropdown-item' onClick={() => { setSelectedCountry(country.ccode); toggleDropDown(); }}>
-                            <div className='dropdown-items-container'>
-
+                            <div className='d-flex flex-center'>
                                 <img src={country.image} alt="" className="dropdown-img" />
                                 <span className='dropdown-option-label'>{country.ccode}</span>
                             </div>
