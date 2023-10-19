@@ -42,7 +42,7 @@ const CountryCode = () => {
     return (
         <>
 
-            <div className='country-codes'>
+            <div className='d-flex'>
                 <div className="dropdown">
                     <button className='dropdown-toggle' onClick={() => toggleDropDown()}>
                         <div className='d-flex flex-center'>
