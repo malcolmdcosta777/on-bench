@@ -5,6 +5,8 @@ const Home = () => {
         <ul>
             <li><NavLink to={'/merge'}>merge Array Items</NavLink></li>
             <li><NavLink to={'/login'}>Login form</NavLink></li>
+            <li><NavLink to={'/ccode'}>Country code</NavLink></li>
+
         </ul>
      );
 }

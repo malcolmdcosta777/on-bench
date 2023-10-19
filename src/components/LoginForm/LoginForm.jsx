@@ -41,6 +41,7 @@ const LoginForm = () => {
             // console.log(`${property}: ${errors[property]}`);
             if (errors[property]) {
                 errorPresent = true;
+                //return; //else loop might still run
             }
         }
 
