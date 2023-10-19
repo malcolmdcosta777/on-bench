@@ -73,17 +73,13 @@ const LoginForm = () => {
         let allErrors = { ...errors };
 
         if (propertyName === "username") {
-            const error = validateName(username);
-            allErrors = { ...allErrors, username: error };
+            allErrors.username = validateName(username);
         } else if (propertyName === "phoneNumber") {
-            const error = validatePhoneNumber(phoneNumber, allErrors);
-            allErrors = { ...allErrors, phoneNumber: error };
+            allErrors.phoneNumber = validatePhoneNumber(phoneNumber, allErrors);
         } else if (propertyName === "email") {
-            const error = validateEmail(email, allErrors);
-            allErrors = { ...allErrors, email: error };
+            allErrors.email = validateEmail(email, allErrors);
         } else if (propertyName === "password") {
-            const error = validatePassword(password, allErrors);
-            allErrors = { ...allErrors, password: error };
+            allErrors.password = validatePassword(password, allErrors);
         }
 
 
