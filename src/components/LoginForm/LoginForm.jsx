@@ -75,11 +75,11 @@ const LoginForm = () => {
         if (propertyName === "username") {
             allErrors.username = validateName(username);
         } else if (propertyName === "phoneNumber") {
-            allErrors.phoneNumber = validatePhoneNumber(phoneNumber, allErrors);
+            allErrors.phoneNumber = validatePhoneNumber(phoneNumber);
         } else if (propertyName === "email") {
-            allErrors.email = validateEmail(email, allErrors);
+            allErrors.email = validateEmail(email);
         } else if (propertyName === "password") {
-            allErrors.password = validatePassword(password, allErrors);
+            allErrors.password = validatePassword(password);
         }
 
 
