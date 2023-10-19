@@ -1,9 +1,9 @@
 import MergeComponents from './components/MergeArray/MergeComponents';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
-import './App.css';
 import LoginForm from './components/LoginForm/LoginForm';
 import CountryCode from './components/CountryCode/CountryCode';
+import './assets/styles/main.scss';
 
 function App() {
   return (

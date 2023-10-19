@@ -1,0 +1,31 @@
+.btn {
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    white-space: nowrap;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: rgb(211, 29, 29);
+    color: #fff;
+
+     &:focus, &:hover{
+        background: rgb(226, 17, 17);
+    }
+}
+
+
+
+.btn--secondary {
+    background: #6CB4EE;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 1.8rem;
+
+     &:focus, &:hover{
+        background: #5aa9e9;
+        color: #fff;
+    }
+}

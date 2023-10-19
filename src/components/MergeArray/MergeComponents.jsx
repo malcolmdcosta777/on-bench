@@ -1,6 +1,5 @@
 import { useState } from "react";
 import mergeArrayItems from "../../utils/mergeArrayItems";
-import './MergeComponents.css';
 
 
 const MergeComponents = () => {
@@ -47,14 +46,14 @@ const MergeComponents = () => {
         <>
             <h2>oldProdList</h2>
 
-            <div className="flex-container">
+            <div className="d-flex flex-wrap mb-10">
                 {oldProdList.map((item, index) =>
                     <div className="box" key={index}>{item.productName}</div>)}
             </div>
 
 
             <h2>newProdList</h2>
-            <div className="flex-container">
+            <div className="d-flex flex-wrap mb-10">
                 {newProdList.map((item, index) =>
                     <div className="box" key={index}>{item.productName}</div>)}
             </div>
@@ -65,7 +64,7 @@ const MergeComponents = () => {
 
 
             <h2>mereged oldProdList</h2>
-            <div className="flex-container">
+            <div className="d-flex flex-wrap mb-10">
                 {meregedoldProdList.map((item, index) =>
                     <div className="box" key={index}>{item.productName}</div>)}
             </div>

@@ -14,7 +14,6 @@ import UK from '../../assets/images/UK.png';
 
 
 import { useState } from 'react';
-import './CountryCode.scss';
 
 const countries = [
     { ccode: 'US', image: US },
@@ -47,7 +46,7 @@ const CountryCode = () => {
                 <div className="dropdown">
                     <button className='dropdown-toggle' onClick={() => toggleDropDown()}>
                         <div className='dropdown-items-container'>
-                            <img src={DE} alt="" className="dropdown-img" />
+                            <img src={countries.filter(c=>c.ccode===selectedCountry)[0].image} alt="" className="dropdown-img" />
                             <span className='dropdown-option-label'>{selectedCountry}</span>
                         </div>
 
@@ -73,6 +72,7 @@ const CountryCode = () => {
                         key={state} >{state}</option>)
                     }
                 </select>
+                
             </div>
 
 

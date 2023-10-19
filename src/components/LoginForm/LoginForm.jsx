@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import FormInput from '../common/FormInput';
 import { validateEmail, validateName, validatePassword, validatePhoneNumber } from '../../utils/formValidate';
-import './LoginForm.css';
 
 // 1. create simple login form. 
 // Fields: 1. Full Name 2. Phone number 3. Email Address 4. Password. 
@@ -96,8 +95,8 @@ const LoginForm = () => {
 
     return (
         <>
-            <div className='container'>
-                <div className="card form-container">
+            <div className='container-fluid d-flex flex-center height-100'>
+                <div className="card card--primary">
 
                     <form onSubmit={handleSubmit}>
 
@@ -141,7 +140,7 @@ const LoginForm = () => {
                         />
 
 
-                        <div className="form-button">
+                        <div className="form-button text-center">
                             <button className="btn btn--secondary" type='submit'>Log In</button>
                         </div>
 

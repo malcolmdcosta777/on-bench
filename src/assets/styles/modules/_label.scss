@@ -1,0 +1,15 @@
+
+.label{
+    /* else margin bottom doesnt work */
+    display: inline-block;
+    margin-bottom: 4px;
+  
+}
+
+.label--primary{
+    color: #A9A9A9;
+}
+
+.label--block{
+    width: 100%;
+}
