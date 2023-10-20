@@ -1,8 +1,4 @@
 
-
-
-
-
 //type="date" 
 //type="datetime-local"
 //type="time" 

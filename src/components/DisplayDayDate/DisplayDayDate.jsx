@@ -1,12 +1,13 @@
 
+// try creating a component called calendar and just display message saying "Selected day is .....and date is ........"
+
+
 import { useState } from "react";
 import Calender from "../common/Calender";
 import { getFormattedDate, getTodayDateFormatted, getWeekDay } from "../../utils/dateHelperFuncs";
 
-// try creating a component called calendar and just display message saying "Selected day is .....and date is ........"
 
 //could have used a external library like i always do but wanted to try default input
-
 //also didnt use library like moment, date-fns, daysjs like i always do cause wanted to do without using them
 
 const DisplayDayDate = () => {
@@ -15,14 +16,10 @@ const DisplayDayDate = () => {
     // const [date, setDate] = useState("");
     const [date, setDate] = useState(getTodayDateFormatted);  //used use state initial function
 
-
-
     const handleChange = (e) => {
         //typeof e.target.value ---> 2023-10-18 ---> string
         setDate(e.target.value);
     };
-
-
 
     return (
         <div className="my-container-fluid">

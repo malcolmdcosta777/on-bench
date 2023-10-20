@@ -5,7 +5,7 @@ export const getFormattedDate = (dateString, format = "D/M/Y") => {
     if (dateString) {
         let objectDate = new Date(dateString); //date object
         let day = objectDate.getDate();
-        let month = objectDate.getMonth() + 1;
+        let month = objectDate.getMonth() + 1;  //cause jan is 0
         let year = objectDate.getFullYear();
 
         if (format === "D/M/Y") {
@@ -22,7 +22,7 @@ export const getTodayDateFormatted = () => { //default format used by input type
     let objectDate = new Date(); //date object
 
     let day = objectDate.getDate();
-    let month = objectDate.getMonth() + 1;
+    let month = objectDate.getMonth() + 1; //cause jan is 0
     let year = objectDate.getFullYear();
 
     return (`${year}-${month}-${day}`); 
