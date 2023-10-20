@@ -4,7 +4,7 @@
 
 import { useState } from "react";
 import Calender from "../common/Calender";
-import { getFormattedDate, getTodayDateFormatted, getWeekDay } from "../../utils/dateHelperFuncs";
+import { getFormattedDate, getTodayDateFormatted, getWeekDay } from "../../utils/dateFunctions";
 
 
 //could have used a external library like i always do but wanted to try default input
