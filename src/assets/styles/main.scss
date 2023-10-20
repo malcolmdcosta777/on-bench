@@ -26,59 +26,59 @@ body {
 @import './modules/dropdowns';
 
 //--------container----------------------------
-.container-fluid{
+.my-container-fluid{
     width: 100%;
 }
 
 
 //---------height--------------------------------
-.height-100{
+.my-height-100{
     height: 100vh;
 }
 
 
 //------------------center-text-----------------
-.text-center{
+.my-text-center{
     text-align: center;
 }
 
 
 //---------------margins------------
-.mb-10{
+.my-margin-bottom-10{
     margin-bottom: 10px;
 }
 
 //------------flex-------------------------------
-.d-flex{
+.my-display-flex{
     display: flex;
 }
 
-.flex-center{
+.my-flex-center{
     justify-content: center;
     align-items: center;
 }
 
-.flex-wrap{
+.my-flex-wrap{
     flex-wrap: wrap;
     //flex-direction: row;
 }
 
 
 //--------------forms----------------------------------
-.form-group,
-.form-button {
+.my-form-group,
+.my-form-button {
     margin-bottom: 14px;
 }
 
 
-.form-button .btn {
+.my-form-button .my-btn{
     padding: 10px 20px;
     border-radius:$input-border-radius;
 }
 
 
 //----boxes--------------------------------------------
-.box {
+.my-box {
     padding: 10px 15px;
     background: gold;
     color: #fff;
@@ -89,7 +89,7 @@ body {
 
 
 //------select----------------------------------------------
-.select{
+.my-select{
     outline: 0;
     padding: 10px;
     min-width: 200px;

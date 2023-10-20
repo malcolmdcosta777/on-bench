@@ -1,31 +1,62 @@
-.btn {
+// Block Element Modifier (BEM) is a naming convention for classes in HTML and CSS development.
+
+// Block: A standalone entity that is meaningful on its own. For example, a button, a form input, a menu.
+
+// Element: A part of a block that has no standalone meaning and is semantically tied to its block. For example, a button's icon, an input field's label.
+
+// Modifier: A flag on a block or element. It is used to change appearance or behavior. For example, a button might have a modifier to make it larger.
+
+// Block
+// .button {
+//     // Block styles
+    
+//     &__icon {
+//       // Element styles
+//     }
+    
+//     &--large {
+//       // Modifier styles
+//     }
+//   }
+
+// .button is the block.
+// .button__icon is an element of the .button block.
+// .button--large is a modifier of the .button block.
+
+.my-btn {
     outline: 0;
     border: 0;
     padding: 10px 15px;
     white-space: nowrap;
     font-size: 1.8rem;
     cursor: pointer;
-}
-
-.btn--primary {
-    background: rgb(211, 29, 29);
-    color: #fff;
-
-     &:focus, &:hover{
-        background: rgb(226, 17, 17);
-    }
-}
 
 
-
-.btn--secondary {
-    background: #6CB4EE;
-    color: #fff;
-    border-radius: 40px;
-    font-size: 1.8rem;
-
-     &:focus, &:hover{
-        background: #5aa9e9;
+    &--primary {
+        background: rgb(211, 29, 29);
         color: #fff;
+    
+         &:focus, &:hover{
+            background: rgb(226, 17, 17);
+        }
     }
+
+
+    &--secondary {
+        background: #6CB4EE;
+        color: #fff;
+        border-radius: 40px;
+        font-size: 1.8rem;
+    
+         &:focus, &:hover{
+            background: #5aa9e9;
+            color: #fff;
+        }
+    }
+
 }
+
+
+
+
+

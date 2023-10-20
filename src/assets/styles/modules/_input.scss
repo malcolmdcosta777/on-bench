@@ -1,15 +1,17 @@
-.input {
+.my-input {
     border: 1px solid #D3D3D3;
     outline: 0;
     padding: 10px;
     font-size: 1.8rem;
     border-radius: $input-border-radius;
+
+    &--block {
+        width: 100%;
+    }
 }
 
 
-.input--block {
-    width: 100%;
-}
+
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

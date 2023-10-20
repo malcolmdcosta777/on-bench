@@ -1,14 +1,15 @@
-.alert {
+.my-alert {
     padding: 5px;
     border: 1px solid transparent;
     border-radius: $alert-border-radius;
     font-size: 1.5rem;
+
+    &-danger {
+        color: $alert-danger-color;
+        background-color: #f2dede;
+        border-color: #ebccd1;
+    }
 }
 
 
 
-.alert-danger {
-    color: $alert-danger-color;
-    background-color: #f2dede;
-    border-color: #ebccd1;
-}

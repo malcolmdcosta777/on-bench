@@ -95,8 +95,8 @@ const LoginForm = () => {
 
     return (
         <>
-            <div className='container-fluid d-flex flex-center height-100'>
-                <div className="card card--primary">
+            <div className='my-container-fluid my-display-flex my-flex-center my-height-100'>
+                <div className="my-card my-card--primary">
 
                     <form onSubmit={handleSubmit}>
 
@@ -140,8 +140,8 @@ const LoginForm = () => {
                         />
 
 
-                        <div className="form-button text-center">
-                            <button className="btn btn--secondary" type='submit'>Log In</button>
+                        <div className="my-form-button my-text-center">
+                            <button className="my-btn my-btn--secondary" type='submit'>Log In</button>
                         </div>
 
                     </form>

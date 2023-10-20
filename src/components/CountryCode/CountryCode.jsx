@@ -42,21 +42,21 @@ const CountryCode = () => {
     return (
         <>
 
-            <div className='d-flex'>
-                <div className="dropdown">
-                    <button className='dropdown-toggle' onClick={() => toggleDropDown()}>
-                        <div className='d-flex flex-center'>
-                            <img src={countries.filter(c=>c.ccode===selectedCountry)[0].image} alt="" className="dropdown-img" />
-                            <span className='dropdown-option-label'>{selectedCountry}</span>
+            <div className='my-display-flex'>
+                <div className="my-dropdown">
+                    <button className='my-dropdown-toggle' onClick={() => toggleDropDown()}>
+                        <div className='my-display-flex my-flex-center'>
+                            <img src={countries.filter(c => c.ccode === selectedCountry)[0].image} alt="country flag" className="my-dropdown-img" />
+                            <span className='my-dropdown-option-label'>{selectedCountry}</span>
                         </div>
 
                     </button>
 
-                    <ul className={`dropdown-menu ${dropdown ? "open" : ""}`}>
-                        {countries.map(country => <li key={country.ccode} className='dropdown-item' onClick={() => { setSelectedCountry(country.ccode); toggleDropDown(); }}>
-                            <div className='d-flex flex-center'>
-                                <img src={country.image} alt="" className="dropdown-img" />
-                                <span className='dropdown-option-label'>{country.ccode}</span>
+                    <ul className={`my-dropdown-menu ${dropdown ? "open" : ""}`}>
+                        {countries.map(country => <li key={country.ccode} className='my-dropdown-item' onClick={() => { setSelectedCountry(country.ccode); toggleDropDown(); }}>
+                            <div className='my-display-flex my-flex-center'>
+                                <img src={country.image} alt={country.ccode + " country flag"} className="my-dropdown-img" />
+                                <span className='my-dropdown-option-label'>{country.ccode}</span>
                             </div>
 
                         </li>
@@ -66,12 +66,14 @@ const CountryCode = () => {
 
 
 
-                <select className='select'>
-                    {states[selectedCountry].map(state => <option className='select-item' value={state}
-                        key={state} >{state}</option>)
+                <select className='my-select'>
+                    {states[selectedCountry].map(state => <option
+                        value={state}
+                        key={state}
+                    >{state}</option>)
                     }
                 </select>
-                
+
             </div>
 
 
