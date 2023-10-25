@@ -2,7 +2,7 @@
 //you need to take such type of structure and on click on each square you need to change the color of it. random color
 
 import { useState } from "react";
-import { generateRandomColor } from "../utils/generateHexColor";
+import { generateRandomColor } from "../utils/generateRandomColor";
 
 const RandomBoxes = () => {
 
@@ -10,9 +10,8 @@ const RandomBoxes = () => {
     const [boxes, setBoxes] = useState(Array(9).fill(null))
 
     const handleColorChange = (index) => {
-        // console.log('handleColorChange');
         let newBoxes = boxes.map(color => color);
-        newBoxes[index] = "#" + generateRandomColor();
+        newBoxes[index] = generateRandomColor();
         setBoxes(newBoxes);  //change the color  asked  but using it as background instead
     };
 
@@ -42,9 +41,9 @@ const RandomBoxes = () => {
                             <div
                                 className="my-box my-box-white my-box-square-100 "
                                 //  style={{ background: color ?? "inherit" }} key={index}
-                                style={{ background: color ?? "#ff", color: '#fff' }} key={index} //else reset if hex color invalid
+                                style={{ background: color ?? "#fff", color: '#fff' }} key={index} //else reset if hex color invalid
                                 onClick={() => handleColorChange(index)}
-                            >{color}</div>)}
+                            ></div>)}
                     </div>
 
 
