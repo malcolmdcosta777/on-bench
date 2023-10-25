@@ -7,7 +7,7 @@ const Home = () => {
             <li><NavLink to={'/login'}>Login form</NavLink></li>
             <li><NavLink to={'/ccode'}>Country code</NavLink></li>
             <li><NavLink to={'/calender'}>Calender</NavLink></li>
-
+            <li><NavLink to={'/randomBoxes'}>random Boxes</NavLink></li>
         </ul>
      );
 }

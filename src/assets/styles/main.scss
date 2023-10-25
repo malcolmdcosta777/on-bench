@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    padding: 10px;
+    padding: 10px; //not good pratice, simply done
     font-size: 1.7rem;
 }
 
@@ -24,43 +24,41 @@ body {
 @import './modules/card';
 @import './modules/label';
 @import './modules/dropdowns';
+@import './modules/flex';
+@import './modules/grid';
 
 //--------container----------------------------
-.my-container-fluid{
+.my-container-fluid {
     width: 100%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+
+//---center using margin
+.my-mx-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 //---------height--------------------------------
-.my-height-100{
+.my-height-100 {
     height: 100vh;
 }
 
 
 //------------------center-text-----------------
-.my-text-center{
+.my-text-center {
     text-align: center;
 }
 
 
 //---------------margins------------
-.my-margin-bottom-10{
+.my-margin-bottom-10 {
     margin-bottom: 10px;
-}
-
-//------------flex-------------------------------
-.my-display-flex{
-    display: flex;
-}
-
-.my-flex-center{
-    justify-content: center;
-    align-items: center;
-}
-
-.my-flex-wrap{
-    flex-wrap: wrap;
-    //flex-direction: row;
 }
 
 
@@ -71,29 +69,44 @@ body {
 }
 
 
-.my-form-button .my-btn{
+.my-form-button .my-btn {
     padding: 10px 20px;
-    border-radius:$input-border-radius;
+    border-radius: $input-border-radius;
+
 }
 
 
 //----boxes--------------------------------------------
 .my-box {
-    padding: 10px 15px;
+    padding: 10px;
     background: gold;
     color: #fff;
-    margin: 5px;
+    // margin: 5px;
     white-space: nowrap;
-    border-radius: 20px;
+    // border-radius: 20px;
+
+
+    &-white {
+        border: 1px solid black;
+        background: #fff;
+        color: black;
+    }
+
+    &-square-100 {
+        height: 100px;
+        width: 100px;
+        ;
+    }
 }
 
 
+
+
+
 //------select----------------------------------------------
-.my-select{
+.my-select {
     outline: 0;
     padding: 10px;
     min-width: 200px;
     border: 1px solid #D3D3D3;
 }
-
-

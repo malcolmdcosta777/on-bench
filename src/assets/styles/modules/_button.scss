@@ -9,11 +9,11 @@
 // Block
 // .button {
 //     // Block styles
-    
+
 //     &__icon {
 //       // Element styles
 //     }
-    
+
 //     &--large {
 //       // Modifier styles
 //     }
@@ -35,8 +35,9 @@
     &--primary {
         background: rgb(211, 29, 29);
         color: #fff;
-    
-         &:focus, &:hover{
+
+        &:focus,
+        &:hover {
             background: rgb(226, 17, 17);
         }
     }
@@ -45,18 +46,14 @@
     &--secondary {
         background: #6CB4EE;
         color: #fff;
-        border-radius: 40px;
+        // border-radius: 40px;
         font-size: 1.8rem;
-    
-         &:focus, &:hover{
+
+        &:focus,
+        &:hover {
             background: #5aa9e9;
             color: #fff;
         }
     }
 
 }
-
-
-
-
-

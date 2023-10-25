@@ -5,7 +5,7 @@
 //type="week"
 //type="month" 
 
-const Calender = ({value, onChange}) => {
+const Calender = ({ value, onChange }) => {
 
 
     return (

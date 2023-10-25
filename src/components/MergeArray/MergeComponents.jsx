@@ -55,14 +55,14 @@ const MergeComponents = () => {
         <>
             <h2>oldProdList</h2>
 
-            <div className="my-display-flex my-flex-wrap my-margin-bottom-10">
+            <div className="my-display-flex my-flex-wrap my-margin-bottom-10 my-flex-gap-10">
                 {oldProdList?.length && oldProdList.map((item, index) =>
                     <div className="my-box" key={index}>{item.productName}</div>)}
             </div>
 
 
             <h2>newProdList</h2>
-            <div className="my-display-flex my-flex-wrap my-margin-bottom-10">
+            <div className="my-display-flex my-flex-wrap my-margin-bottom-10 my-flex-gap-10">
                 {newProdList?.length &&  newProdList.map((item, index) =>
                     <div className="my-box" key={index}>{item.productName}</div>)}
             </div>
@@ -73,7 +73,7 @@ const MergeComponents = () => {
 
 
             <h2>mereged oldProdList</h2>
-            <div className="my-display-flex my-flex-wrap my-margin-bottom-10">
+            <div className="my-display-flex my-flex-wrap my-margin-bottom-10 my-flex-gap-10">
                 {  meregedoldProdList.map((item, index) =>
                     <div className="my-box" key={index}>{item.productName}</div>)}
             </div>

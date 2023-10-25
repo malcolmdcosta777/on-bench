@@ -5,6 +5,7 @@ import LoginForm from './components/LoginForm/LoginForm';
 import CountryCode from './components/CountryCode/CountryCode';
 import DisplayDayDate from './components/DisplayDayDate/DisplayDayDate';
 import './assets/styles/main.scss';
+import RandomBoxes from './components/RandomBoxes';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Route path='/login' element={<LoginForm />} />
       <Route path='/ccode' element={<CountryCode/>} />
       <Route path='/calender' element={<DisplayDayDate/>} />
-      <Route path='*' element={<Home />} />
+     <Route path='/randomBoxes' element={<RandomBoxes/>} />
+     <Route path='*' element={<Home />} />
     </Routes>
   );
 }

@@ -1,0 +1,24 @@
+//----grids----------------
+.my-display-grid {
+    display: grid;
+}
+
+.my-grid {
+
+    &-1x2 {
+        grid-template-columns: repeat(2, 100px);
+    }
+
+    &-1x3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &-gap-10 {
+        gap: 10px;
+    }
+
+    // &-template-row-100 {
+    //     grid-template-rows: repeat(3, 100px);
+    //     ;
+    // }
+}
